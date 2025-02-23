@@ -6,10 +6,18 @@ parallel-jobs = 1
 
 # you can use rvmm-config-gen to generate a config
 
+[Music]
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
+build-mode = "module"
+excluded-patches = "'GmsCore support'"
+
 [YouTube]
-build-mode = "both"
-included-patches = "'Hide ads' 'Video ads' 'Copy video URL' 'Disable resuming Shorts on startup' 'Bypass image region restrictions' 'Remove background playback restrictions' 'Check watch history domain name resolution' 'Spoof video streams' 'Force original audio' 'Remember video quality' 'Restore old video quality menu'"
-exclusive-patches = true
-version = "auto"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+build-mode = "module"
+included-patches = "'Hide ads' 'Video ads' 'Seekbar thumbnails' 'Disable resuming Shorts on startup' 'Bypass image region restrictions' 'Remove background playback restrictions' 'Check watch history domain name resolution' 'Bypass URL redirects' 'Open links externally' 'Remove tracking query parameter' 'Spoof video streams' 'Force original audio' 'Remember video quality' 'Restore old video quality menu'"
+exclusive-patches = true
+
+[Photos]
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/photos/"
+build-mode = "module"
+excluded-patches = "'GmsCore support'"
